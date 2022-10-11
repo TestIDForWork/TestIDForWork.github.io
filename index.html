@@ -10,7 +10,10 @@
   integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
 
   <script>
-      Kakao.init('0a9fde9c96a6b3cc701c334b6d36174c');  
+    if (!Kakao.isInitialized()) {
+      alert('test2');
+      Kakao.init('0a9fde9c96a6b3cc701c334b6d36174c');
+    }  
 </script>
 
 </head>
@@ -33,7 +36,7 @@
             </div>
         </div>
         <div class="hero">
-            <h2>DESIGN HOUSE</h2>
+            <h2>DESIGN HOUSE111</h2>
             <p>Subscrib Easy Youtube Channel to watch more videos,<br>press t he bell icon to get latest updates.</p>
             <button>WATCH VIDEOS</button>
         </div>
@@ -43,7 +46,7 @@
 <script>  
 function shareKakao() {
   alert('test');
-  Kakao.Link.sendDefault({
+  Kakao.share.sendDefault({
     objectType: 'feed',
     content:{
       title: '국민내일배움카드 HRD-Net 한국고용정보원',
