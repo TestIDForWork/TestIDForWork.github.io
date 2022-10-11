@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js"
-
   integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
 
   <script>
@@ -37,7 +36,7 @@
             </div>
         </div>
         <div class="hero">
-            <h2>DESIGN HOUS</h2>
+            <h2>DESIGN HOUSE1111212</h2>
             <p>Subscrib Easy Youtube Channel to watch more videos,<br>press t he bell icon to get latest updates.</p>
             <button>WATCH VIDEOS</button>
         </div>
@@ -47,29 +46,40 @@
 <script>  
 function shareKakao() {
   alert('test');
-  Kakao.Share.sendDefault({
-    objectType: 'feed',
-    content:{
-      title: '국민내일배움카드 HRD-Net 한국고용정보원',
-      description: 'HRD-Net 국민내일배움카드가 함께합니다.',
-      imageUrl:'https://www.hrd.go.kr/new_images/common/headerLogo.png',
-      imageWidth: 800,
-      imageHeight: 400,
-      link:{
-        mobileWebUrl: 'https://www.hrd.go.kr',
-        webUrl: 'https://www.hrd.go.kr',
+    Kakao.Share.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '딸기 치즈 케익',
+        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+        imageUrl:
+          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com',
+        },
       },
-    },
-    buttons: [
-       {
-         title: 'HRD-Net 구경하기',
-         link:{
-           mobileWebUrl: 'https://www.hrd.go.kr',
-           webUrl: 'https://www.hrd.go.kr',
-         },
-       },
-    ],
-  });
+      social: {
+        likeCount: 286,
+        commentCount: 45,
+        sharedCount: 845,
+      },
+      buttons: [
+        {
+          title: '웹으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com',
+          },
+        },
+        {
+          title: '앱으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com',
+          },
+        },
+      ],
+    });
 }
   </script>
 
