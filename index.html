@@ -6,11 +6,12 @@
     <title>Design House</title>
     <link rel="stylesheet" href="style.css">
 
-    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js"
-  integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
+     <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js"
+      integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
     <script>
-    Kakao.init('76a289637b083ca9e4a79a8112657160'); // 사용하려는 앱의 JavaScript 키 입력
+      Kakao.init('76a289637b083ca9e4a79a8112657160'); // 사용하려는 앱의 JavaScript 키 입력
     </script>
+
 </head>
 <body>
     <div class="container">
@@ -18,9 +19,9 @@
             <h1><a href="#">DESIGN</a></h1>
             <div class="nav">
                 <a id="kakaotalk-sharing-btn" href="javascript:;">
-                    <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
-                      alt="카카오톡 공유 보내기 버튼" />
-                </a>
+  <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+    alt="카카오톡 공유 보내기 버튼" />
+</a>
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">BEDROOM</a></li>
@@ -39,35 +40,9 @@
 </body>
 
 <script>
-  Kakao.Share.createDefaultButton({
+  Kakao.Share.createScrapButton({
     container: '#kakaotalk-sharing-btn',
-    objectType: 'feed',
-    content: {
-      title: '직업훈련포털 HRD-Net 공유하기',
-      description: '오늘도 더 성장할 나를 위한 직업훈련 지식포털',
-      imageUrl:
-        'https://www.hrd.go.kr/new_images/common/headerLogo.png',
-      link: {
-        mobileWebUrl: 'https://hrd.go.kr/hrdp/et/petco/PETCO0100D.do',
-        webUrl: 'https://hrd.go.kr/hrdp/et/petco/PETCO0100D.do',
-      },
-    },
-    buttons: [
-      {
-        title: '웹으로 보기',
-        link: {
-          mobileWebUrl: 'https://www.hrd.go.kr/hrdp/co/pcobo/PCOBO0100P.do?tracseId=AIG20200000286611&tracseTme=8&crseTracseSe=C0061&trainstCstmrId=500020049185#undefined',
-          webUrl: 'https://www.hrd.go.kr/hrdp/co/pcobo/PCOBO0100P.do?tracseId=AIG20200000286611&tracseTme=8&crseTracseSe=C0061&trainstCstmrId=500020049185#undefined',
-        },
-      },
-      {
-        title: '앱으로 보기',
-        link: {
-          mobileWebUrl: 'https://www.hrd.go.kr/hrdp/et/petco/PETCO0100D.do',
-          webUrl: 'https://www.hrd.go.kr/hrdp/et/petco/PETCO0100D.do',
-        },
-      },
-    ],
+    requestUrl: 'https://www.hrd.go.kr/hrdp/et/petco/PETCO0100D.do',
   });
 </script>
 
