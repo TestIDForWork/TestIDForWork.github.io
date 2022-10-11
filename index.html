@@ -10,11 +10,7 @@
   integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
 
   <script>
-
-    if (!Kakao.isInitialized()){
-      Kakao.init('0a9fde9c96a6b3cc701c334b6d36174c');
-    }
-  
+      Kakao.init('0a9fde9c96a6b3cc701c334b6d36174c');  
 </script>
 
 </head>
@@ -37,7 +33,7 @@
             </div>
         </div>
         <div class="hero">
-            <h2>DESIGN HOUSE000</h2>
+            <h2>DESIGN HOUSE</h2>
             <p>Subscrib Easy Youtube Channel to watch more videos,<br>press t he bell icon to get latest updates.</p>
             <button>WATCH VIDEOS</button>
         </div>
@@ -45,6 +41,8 @@
 </body>
 
 <script>  
+function shareKakao() {
+  alert('test');
   Kakao.Link.sendDefault({
     objectType: 'feed',
     content:{
@@ -68,6 +66,7 @@
        },
     ],
   });
+}
   </script>
 
 </html>
