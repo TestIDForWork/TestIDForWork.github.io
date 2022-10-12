@@ -54,7 +54,7 @@ function shareKakao() {
   Kakao.Share.sendDefault({
     objectType: 'feed',
     content:{
-      title: '${title}',
+      title: document.title,
       description: 'HRD-Net 국민내일배움카드가 함께합니다.',
       imageUrl:'/images/key.png',
       imageWidth: 190,
