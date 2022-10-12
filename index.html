@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="hero">
-            <h2>DESIGN HOUSE222</h2>
+            <h2>DESIGN HOUSE111</h2>
             <p>Subscribe Easy Youtube Channel to watch more videos,<br>press the bell icon to get latest updates.</p>
             <button>WATCH VIDEOS</button>
         </div>
@@ -57,10 +57,8 @@
 <script>  
 function shareKakao() {
   var kakaoUrl = 'https://www.hrd.go.kr';
-  Kakao.Share.sendScrap({
-    requestUrl: kakaoUrl,
-  });
-  /* Kakao.Share.sendDefault({
+  
+  Kakao.Share.sendDefault({
     objectType: 'feed',
     content:{
       title: document.title,
@@ -69,20 +67,20 @@ function shareKakao() {
       imageWidth: 190,
       imageHeight: 42,
       link:{
-        mobileWebUrl: 'https://www.hrd.go.kr/hrdp/et/petco/PETCO0200D.do',
-        webUrl: 'https://www.hrd.go.kr/hrdp/et/petco/PETCO0200D.do',
+        mobileWebUrl: window.document.location.href,
+        webUrl: window.document.location.href,
       },
     },
     buttons: [
        {
-         title: 'https://www.hrd.go.kr/hrdp/et/petco/PETCO0200D.do',
+         title: '사이트 ',
          link:{
-           mobileWebUrl: 'https://www.hrd.go.kr/hrdp/et/petco/PETCO0200D.do',
-           webUrl: 'https://www.hrd.go.kr/hrdp/et/petco/PETCO0200D.do',
+           mobileWebUrl: kakaoUrl,
+           webUrl: kakaoUrl,
          },
        },
     ],
-  }); */
+  });
 }
   </script>
 
