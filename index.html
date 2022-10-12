@@ -56,8 +56,10 @@
 
 <script>  
 function shareKakao() {
-  alert('test');
-  Kakao.Share.sendDefault({
+  Kakao.Share.sendScrap({
+    requestUrl: window.location.assign(link),
+  });
+  /* Kakao.Share.sendDefault({
     objectType: 'feed',
     content:{
       title: document.title,
@@ -79,7 +81,7 @@ function shareKakao() {
          },
        },
     ],
-  });
+  }); */
 }
   </script>
 
