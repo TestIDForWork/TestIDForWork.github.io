@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hrd.go.kr/hrdp/gi/pgiao/PGIAO0300D.do">
+    <meta property="og:title" content="$(document).attr("title")>
+    <meta property="og:description" content="Road to Development">
+    <meta property="og:image" content="https://www.hrd.go.kr/new_images/main_renewal/headerLogo02.png">
     <!-- <title>Design House</title> -->
     <link rel="stylesheet" href="style.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -55,7 +60,7 @@ function shareKakao() {
   Kakao.Share.sendDefault({
     objectType: 'feed',
     content:{
-      title: window.location.title,
+      title: document.title,
       description: 'HRD-Net 국민내일배움카드가 함께합니다.',
       imageUrl:'https://www.hrd.go.kr/new_images/common/headerLogo.png',
       imageWidth: 190,
