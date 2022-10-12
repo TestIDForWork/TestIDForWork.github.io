@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design House</title>
+    <!-- <title>Design House</title> -->
     <link rel="stylesheet" href="style.css">
 
     <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js"
@@ -11,16 +11,17 @@
   integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
 
   <script>
-    if (!Kakao.isInitialized()) {      
+    $(function(){
+      document.title = "테스트 페이지 환영합니다";
+    });
+  </script>
+
+  <script>
+    if (!Kakao.isInitialized()) {
       Kakao.init('0a9fde9c96a6b3cc701c334b6d36174c');
     }  
   </script>
 
-  <script>
-    
-      document.title = "테스트 페이지 환영합니다";
-    
-  </script>
 </head>
 <body>
     <div class="container">
@@ -41,8 +42,8 @@
             </div>
         </div>
         <div class="hero">
-            <h2>DESIGN HO222</h2>
-            <p>Subscrib Easy Youtube Channel to watch more videos,<br>press the bell icon to get latest updates.</p>
+            <h2>DESIGN HOUSE111</h2>
+            <p>Subscribe Easy Youtube Channel to watch more videos,<br>press the bell icon to get latest updates.</p>
             <button>WATCH VIDEOS</button>
         </div>
     </div>    
@@ -54,9 +55,9 @@ function shareKakao() {
   Kakao.Share.sendDefault({
     objectType: 'feed',
     content:{
-      title: window.location.href,
+      title: document.title,
       description: 'HRD-Net 국민내일배움카드가 함께합니다.',
-      imageUrl:'/images/key.png',
+      imageUrl:'https://www.hrd.go.kr/new_images/common/headerLogo.png',
       imageWidth: 190,
       imageHeight: 42,
       link:{
@@ -66,7 +67,7 @@ function shareKakao() {
     },
     buttons: [
        {
-         title: '직업훈련포탈 HRD-Net',
+         title: 'https://www.hrd.go.kr/hrdp/et/petco/PETCO0200D.do',
          link:{
            mobileWebUrl: 'https://www.hrd.go.kr/hrdp/et/petco/PETCO0200D.do',
            webUrl: 'https://www.hrd.go.kr/hrdp/et/petco/PETCO0200D.do',
